@@ -174,7 +174,7 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     .navbar-brand {
-        @media(max-width:768px) {
+        @media(max-width: 768px) {
             padding-left: 8%;
         }
         color: @black;
@@ -190,10 +190,10 @@ header {
             width: 150px;
             margin-top: -10px;
             transition: all 1s;
-            @media(max-width:768px) {
-            width: 110px;
-            margin-top: 4px;
-        }
+            @media(max-width: 768px) {
+                width: 110px;
+                margin-top: 4px;
+            }
         }
     }
     .navbar-nav {
@@ -289,14 +289,14 @@ section.success {
         top: 40px;
         margin: auto;
         fill: white;
-        @media(max-width:991px){
-            top:80px;
+        @media(max-width: 991px) {
+            top: 80px;
         }
-        @media(max-width:589px){
-            top:60px;
+        @media(max-width:589px) {
+            top: 60px;
         }
-        @media(max-width:500px){
-            top:40px;
+        @media(max-width:500px) {
+            top: 40px;
         }
     }
     .upper {
@@ -310,14 +310,14 @@ section.success {
         .dummy {
             margin-top: 100%;
         }
-        @media(max-width:991px){
-            padding:80px;
+        @media(max-width:991px) {
+            padding: 80px;
         }
-        @media(max-width:589px){
-            padding:60px;
+        @media(max-width:589px) {
+            padding: 60px;
         }
-        @media(max-width:500px){
-            padding:40px;
+        @media(max-width:500px) {
+            padding: 40px;
         }
     }
     h2 {
@@ -332,40 +332,52 @@ section.success {
         padding-left: 20px;
         padding-right: 20px;
         color: #f1f1f1;
-        @media(max-width:991px){
-            margin-bottom:100px;
+        @media(max-width: 991px) {
+            margin-bottom: 100px;
         }
     }
 }
-#prizes{
-    table{
+
+#prizes {
+    p{
+        margin-top: 65px;
+    }
+    table {
         width: 100%;
         color: @black;
-        tr{
-            height:8vh;
+        tr {
+            height: 8vh;
             border-bottom: 1px solid @gray-lighter;
-
-            &:hover{
+            @media(max-width: 589px) {
+                    height: 10vh;
+                }
+            &:hover {
                 border-bottom: 1px solid darken(@gray-lighter, 17%);
             }
-            th{
+            th {
                 font-family: "Montserrat";
                 font-size: 26px;
                 text-transform: uppercase;
                 color: @theme-success;
+
             }
-            th:first-child{
+            th:first-child {
                 text-align: left;
             }
-            td{
-                font-size:18px;
+            td {
+                font-size: 18px;
             }
-            td,th{
+            td,
+            th {
                 padding-left: 35px;
+                @media(max-width: 589px) {
+                    padding-left: 5px;
+                }
             }
         }
     }
 }
+
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
