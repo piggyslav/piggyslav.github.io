@@ -268,7 +268,23 @@ section {
 }
 
 section.success {
-    background: @theme-success;
+    /* IE10+ */ 
+background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner, #22FFD3 0%, #18BC9C 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(left bottom, ellipse farthest-corner, #22FFD3 0%, #18BC9C 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(left bottom, ellipse farthest-corner, #22FFD3 0%, #18BC9C 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, left bottom, 0, left bottom, 572, color-stop(0, #22FFD3), color-stop(100, #18BC9C));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(left bottom, ellipse farthest-corner, #22FFD3 0%, #18BC9C 100%);
+
+/* W3C Markup */ 
+background-image: radial-gradient(ellipse farthest-corner at left bottom, #22FFD3 0%, #18BC9C 100%);
     color: white;
 }
 
